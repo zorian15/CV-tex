@@ -1,58 +1,244 @@
-\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rishi Shah 
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\usepackage[hidelinks]{hyperref}
-\usepackage{showlabels}
-\usepackage{lineno}
-\linenumbers
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
 
-\newcommand{\median}{\operatorname{median}}
+\documentclass{resume} % Use the custom resume.cls style
 
-% http://bytesizebio.net/2013/03/11/adding-supplementary-tables-and-figures-in-latex/
-\newcommand{\beginsupplement}{%
-        \setcounter{table}{0}
-        \renewcommand{\thetable}{S\arabic{table}}%
-        \setcounter{figure}{0}
-        \renewcommand{\thefigure}{S\arabic{figure}}%
-     }
-
-\hyphenation{Ge-nome Ge-nomes hyper-mut-ation through-put}
-
-\title{Template}
-\author{You}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Zorian Thornton} % Your name
+\address{Seattle, WA} % Your secondary addess (optional)
+\address{(+1) 804-316-1769 \\ zoriant15@gmail.com} % Your phone number and email
 
 \begin{document}
-\maketitle
 
-\begin{abstract}
-Abstract here.
-\end{abstract}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
 
+\begin{rSection}{Education}
 
-\section*{Introduction}
-\cite{Felsenstein1981-zs}
-
-% \begin{figure}[h]
-% \centering
-% \includegraphics[width=0.35\textwidth]{figures/subsplit.pdf}
-% \caption{\
-% A subsplit structure.
-% }
-% \label{fig:subsplit}
-% \end{figure}
+{\bf University of Washington - Seattle,WA} \hfill {\em Sep. 2019 - Present} 
+\\ Ph.D Student in Genome Sciences \hfill { GPA: 3.8 / 4.0} \smallskip \\
+{\bf Virginia Tech - Blacksburg,VA} \hfill {\em Aug. 2015 - May 2019} 
+\\ B.Sc Statistics \hfill { GPA: 3.7 / 4.0} \smallskip 
+\\{\bf Virginia Tech - Blacksburg,VA} \hfill {\em Aug. 2015 - May 2019} 
+\\ B.Sc Computational Modeling and Data Analytics \hfill { GPA: 3.6 / 4.0 } \smallskip  \\
+Minors in Mathematics and Computer Science
+\end{rSection}
 
 
-\bibliographystyle{plain}
-\bibliography{main}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS AND RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Research Experience}
+
+%% Matsen Group pre-candidate
+{\bf Fred Hutchison Cancer Research Center} \hfill { \em Seattle,WA}\\
+{Predoctoral Candidate, advised by Frederick Matsen IV} \hfill {\em June 2020 - Present}
+\begin{itemize}    
+    \item Developing and fitting neural network models to predict protein variant phenotypes from deep mutational scanning experiments to accurately predict fitness of unseen variants and infer the shape of global epistasis.  
+\end{itemize}
+
+%% Beliveau Lab Rotation
+{\bf University of Washington Department of Genome Sciences} \hfill { \em Seattle,WA}\\
+{Lab Rotation with Brian Beliveau} \hfill {\em March 2020 - June 2020}
+\begin{itemize}    
+    \item Implemented a bioinformatics pipeline for the design of split-oligo probes for fluorescence \emph{in situ} hybridization (FISH) experiments to enable fast and affordable design of highly-specific RNA FISH probes.
+\end{itemize}
+
+%% Matsen Group Rotation
+{\bf Fred Hutchison Cancer Research Center} \hfill { \em Seattle,WA}\\
+{Lab Rotation with Frederick Matsen IV} \hfill {\em Jan. 2020 - March 2020}
+\begin{itemize}    
+    \item \emph{See related entry above}
+\end{itemize}
+
+%% Noble Lab Rotation
+{\bf University of Washington Department of Genome Sciences} \hfill { \em Seattle,WA}\\
+{Lab Rotation with William S. Noble} \hfill {\em Sept. 2019 - Dec. 2019}
+\begin{itemize}    
+    \item Implemented a novel method for systematically finding potential functional inter-chromosomal contacts in Hi-C data.
+\end{itemize}
+
+%% Undergrad research w/ Dr. Tegge
+{\bf Virginia Tech Department of Statistics} \hfill { \em Blacksburg,VA}\\
+{Undergraduate Research with Allison Tegge} \hfill {\em Aug. 2018 - May 2019}
+\begin{itemize}
+    \item Implemented Self-Organizing Maps and conducted survival analysis to identify genes and pathways associated with progression of colorectal cancer from patients included in The Cancer Genome Atlas Program.
+\end{itemize}
+
+%% Undergrad research w/ Dr. Johnson
+{\bf Virginia Tech Department of Statistics} \hfill { \em Blacksburg,VA}\\
+{Undergraduate Research with Leah Johnson} \hfill {\em Aug. 2017 - May 2019}
+\begin{itemize}
+    \item Developed a new formula for the disease basic reproductive number, $R_0,$ to include temperature sensitive midge life history traits to predict potential regions for the spread of Bluetongue viral disease.
+\end{itemize}
+
+\newpage
+
+%% UW REU w/ Dr. Bruce
+{\bf University of Washington Department of Genome Sciences} \hfill { \em Seattle,WA}\\
+{Undergraduate Research with Jim Bruce} \hfill {\em June. 2017 - Aug. 2017}
+\begin{itemize}
+    \item Visualized inter-surface regions of cross-linked proteins and built probabilistic models to quantify competition between proteins for linkage with other proteins to help scientists characterize protein function, discover mutations, and discover protein-protein interactions to tackle molecular challenges such as cancer
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Publications}
+
+\begin{itemize}
+    \item Keller, A., Chavez, J.D., Eng, J.K., \textbf{Thornton, Z.} and Bruce, J.E. (2018). \textit{Tools for 3D Interactome Visualization}. Journal of proteome research, 18(2), pp.753-758.
+    
+    \item El Moustaid, F., \textbf{Thornton, Z.}, Slamani, H., Ryan, S. and Johnson, LR (2019). \textit{Understanding the effect of temperature on Bluetongue disease risk in livestock}.
+    \textit{Pending Review}
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH PRESENTATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Research Presentations}
+\begin{itemize}
+
+    \item Zorian Thornton, \textit{Predicting Disease Progression of Colorectal Cancer via Self-Organizing Maps}, RECOMB 2019, George Washington University, Washington DC, May 2019
+    
+    \item Zorian Thornton, \textit{Modeling Bluetongue Virus via Markov Chain Monte Carlo Methods}, Student Experiential Learning Conference, Virginia Tech, Blacksburg, VA, Apr. 2018
+    
+    \item Zorian Thornton, \textit{Viewing Molecular Interaction Interfaces Through Directed Computational Methods}, Department of Genome Sciences Research Symposium, University of Washington, Seattle, WA, Aug. 2017
+    
+\end{itemize}
 
 
-% \clearpage
-% \section*{Supplementary Materials}
-% \beginsupplement
-% Supplementary text and figures here.
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+
+{\bf Virginia Tech Statistical Applications and Innovations Group} \hfill {\em Blacksburg, VA} \\ 
+{Associate Collaborator} \hfill {\em June 2019 - Sept. 2019}
+\begin{itemize}
+    \item Assistant statistics consultant to Virginia Tech graduate students and faculty.
+\end{itemize}
+
+{\bf Virginia Tech Department of Statistics} \hfill {\em Blacksburg, VA} \\ 
+{Course Development Contributor for Dr. Christian Lucero} \hfill {\em May. 2019 - June 2019}
+\begin{itemize}
+    \item Assisted in writing of lectures, and homework assignments for an introductory machine learning class: Introduction to Data Analysis and Visualization (CMDA 3654)
+\end{itemize}
+
+{\bf Virginia Tech Department of Statistics} \hfill {\em Blacksburg, VA} \\ 
+{Grader for Dr. Jane Robertson Evia} \hfill {\em Aug. 2018 - May 2019}
+\begin{itemize}
+    \item Statistics for Social Science (STAT 3604)
+\end{itemize}
+
+{\bf Nielsen} \hfill {\em Chicago, IL} \\ 
+{Data Science Intern} \hfill {\em June 2018 - Aug. 2018}
+\begin{itemize}
+    \item Implemented statistical framework to identify possible errors in scanned receipt data and implemented pipeline to attempt to correct errors
+    \end{itemize}
+
+{\bf Virginia Tech Math Emporium} \hfill {\em Blacksburg, VA} \\ 
+{Instructional Assistant} \hfill {\em Jan. 2017 - Aug. 2018}
+\begin{itemize}
+    \item Teaching assistant for introductory math courses including differential and integral calculus, graph theory, differential equations, and linear algebra
+\end{itemize}
+\end{rSection}
+
+\newpage
+%----------------------------------------------------------------------------------------
+%	HONORS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Honors}
+{\bf Mu Sigma Rho, National Honor Society} \hfill { \em Inducted April 2019}
+\begin{itemize}
+    \item National honorary society for statistics whose purpose is the promotion and encouragement of scholarly activity in statistics, and the recognition of outstanding achievement among the students and instructional staff in eligible academic institutions. 
+\end{itemize}
+
+{\bf College of Science Dean’s Roundtable Scholarship, Virginia Tech} \hfill { \em Aug. 2018 - May 2019}
+\begin{itemize}
+    \item Merit-based scholarship awarded annually to four students who are and will continue to be excellent representatives of the College of Science
+\end{itemize}
+
+{\bf Luther and Alice Hamlett Undergraduate Research Grant} \hfill { \em Aug. 2018 - May 2019}
+\begin{itemize}
+    \item Selective research grant awarded to Virginia Tech undergraduates conducting research in the Academy of Integrated Sciences
+\end{itemize}
+
+{\bf Fralin Undergraduate Research Fellowship} \hfill { \em Aug. 2017 - May 2018}
+\begin{itemize}
+    \item Selective fellowship awarded to Virginia Tech undergraduates conducting research involving the life sciences
+\end{itemize}
+
+{\bf Eckert Statistics Scholar, Virginia Tech} \hfill { \em Jan. 2016 - May 2019}
+\begin{itemize}
+    \item Three-year scholarship awarded annually to two Statistics majors for academic excellence
+\end{itemize}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Programming Languages, Tools, and Concepts}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Preferred Programming Languages \ & R, Python, C/C++ \\
+HPC Tools \ & CUDA, MPI, openMP \\
+Dev Tools \& Environments  & Git, Jupyter \\
+Other Programming Languages \ &  Java, MATLAB, PHP, SAS, SQL
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL ORGANIZATIONS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Professional Organizations}
+
+\begin{itemize}
+    \item The American Association of Immunologists member since 2020
+    \item National Society of Blacks in Computing member since 2017
+    \item American Statistical Association member since 2016
+    \item National Society of Black Engineers member since 2016
+\end{itemize}
+
+\end{rSection}
 
 
 \end{document}
