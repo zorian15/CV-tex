@@ -1,0 +1,58 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{showlabels}
+\usepackage{lineno}
+\linenumbers
+
+\newcommand{\median}{\operatorname{median}}
+
+% http://bytesizebio.net/2013/03/11/adding-supplementary-tables-and-figures-in-latex/
+\newcommand{\beginsupplement}{%
+        \setcounter{table}{0}
+        \renewcommand{\thetable}{S\arabic{table}}%
+        \setcounter{figure}{0}
+        \renewcommand{\thefigure}{S\arabic{figure}}%
+     }
+
+\hyphenation{Ge-nome Ge-nomes hyper-mut-ation through-put}
+
+\title{Template}
+\author{You}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Abstract here.
+\end{abstract}
+
+
+\section*{Introduction}
+\cite{Felsenstein1981-zs}
+
+% \begin{figure}[h]
+% \centering
+% \includegraphics[width=0.35\textwidth]{figures/subsplit.pdf}
+% \caption{\
+% A subsplit structure.
+% }
+% \label{fig:subsplit}
+% \end{figure}
+
+
+\bibliographystyle{plain}
+\bibliography{main}
+
+
+% \clearpage
+% \section*{Supplementary Materials}
+% \beginsupplement
+% Supplementary text and figures here.
+
+
+\end{document}
