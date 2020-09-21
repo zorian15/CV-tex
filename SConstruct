@@ -17,12 +17,12 @@ pdfs = [env.Copier(target = '_build/' + os.path.basename(pdf), source = pdf)
 
 Depends(Flatten([pdfs]), Flatten([figure_pdfs]))
 
-main=env.PDF(target='_build/main.pdf',source='main.tex')
+main=env.PDF(target='_build/cv.pdf',source='cv.tex')
 
 Depends(Flatten([main]),
         Flatten([pdfs, figure_pdfs, 'main.bib']))
 
-cont_build = env.Command('.continuous', ['main.bib', 'main.tex'],
+cont_build = env.Command('.continuous', ['main.bib', 'cv.tex'],
     'while :; do inotifywait -e modify $SOURCES; scons -Q; done')
 Alias('continuous', cont_build)
 
