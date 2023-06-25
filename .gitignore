@@ -3,3 +3,18 @@ _build
 *.pyc
 _ignore
 .DS_Store
+
+# LaTeX
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+*.toc
+*.lof
+*.lot
+*.fmt
+*.aux
+*.bbl
+*.blg
+*.log
