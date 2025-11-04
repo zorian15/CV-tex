@@ -26,7 +26,7 @@
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Zorian Thornton} % Your name
-\address{Ph.D Student, Genome Sciences, Seattle,WA} % Address or description
+\address{Ph.D Candidate, Genome Sciences, Seattle,WA} % Address or description
 \address{(+1) 804-316-1769 \\ zoriant15@gmail.com} % Your phone number and email
 
 \begin{document}
@@ -38,7 +38,7 @@
 \begin{rSection}{Education}
 
 {\bf University of Washington - Seattle,WA} \hfill {\em Sep. 2019 - Present}
-\\ Ph.D Student in Genome Sciences \smallskip \\
+\\ Ph.D in Genome Sciences (Expected Winter 2025/2026) \smallskip \\
 {\bf Virginia Tech - Blacksburg,VA} \hfill {\em Aug. 2015 - May 2019}
 \\ B.Sc Statistics  \smallskip
 \\{\bf Virginia Tech - Blacksburg,VA} \hfill {\em Aug. 2015 - May 2019}
@@ -47,63 +47,72 @@ Minors in Mathematics and Computer Science
 \end{rSection}
 
 
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Programming Languages, Tools, and Concepts}
+
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} p{0.5\textwidth} @{} }
+        Machine Learning & Deep learning frameworks (PyTorch), transformers, supervised/unsupervised methods, bayesian inference, anomaly detection \\
+        Data Processing & Python, R, pandas, numpy, SQL, data pipelines, statistical analysis, reproducible research workflows \\
+        Software Engineering & Test-driven development (TDD), software architecture \& refactoring, configuration management, type-safe systems design \\
+        Cloud \& Deployment & Version control (Git), workflow management (Snakemake), CI/CD pipelines \\
+        HPC & SLURM, CUDA, openMP, performance optimization \\
+        Data Visualization & matplotlib, seaborn, ggplot2, interactive visualization techniques \\
+        Development Environment & Unix, bash, collaborative version control, AI-assisted development, code review \& quality assurance \\
+        Other Skills & Java, MATLAB, dimensionality reduction techniques (PCA, MDS, UMAP, t-SNE)
+        
+    \end{tabular}
+    
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	PROJECTS AND RESEARCH EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Research Experience}
+\begin{rSection}{Research and Work Experience}
 
 %% Matsen Group candidate
 {\bf Fred Hutchison Cancer Research Center} \hfill { \em Seattle,WA}\\
 {Doctoral Candidate, advised by Frederick Matsen IV} \hfill {\em July 2021 - Present}
 \begin{itemize}
-    \item Developing \texttt{torchdms}: a flexible modeling framework for fitting neural networks with PyTorch to deep mutational scanning experiments.
-    The goal of \texttt{torchdms} is to infer a \emph{fitness landscape} that accurately predicts quantitative phenotypes of unseen protein variants while preserving biophysically interpretable parameters.
+    \item Developing end-to-end machine learning pipelines to predict viral fitness and evolution using large-scale biological data
+    \item Designed and implemented biophysically-inspired neural networks (PyTorch) that enable accurate predictions of protein variant phenotypes from experimental data
+    \item Applied statistical methods to analyze complex biological datasets and extract meaningful patterns
+    \item Collaborated with research groups to validate models and improve computational approaches
 \end{itemize}
 
-%% Matsen Group pre-candidate
-{\bf Fred Hutchison Cancer Research Center} \hfill { \em Seattle,WA}\\
-{Doctoral Student, advised by Frederick Matsen IV} \hfill {\em June 2020 - July 2021}
+{\bf Adaptive Biotechnologies} \hfill {\em Seattle, WA} \\
+{Machine Learning Computational Biology Intern} \hfill {\em June 2022 - Sept. 2022}
 \begin{itemize}
-    \item Developing and fitting neural network models to predict protein variant phenotypes from deep mutational scanning experiments to accurately predict fitness of unseen variants and infer the shape of global epistasis.
+    \item Implemented and benchmarked semi-supervised learning methods for classification of T-cell receptor specificity using high-throughput sequencing data
+    \item Designed data preprocessing pipelines to handle complex biological sequence data at scale
+    \item Conducted systematic downsampling experiments to optimize model performance across varying data conditions
+    \item Developed visualization tools to communicate technical findings to cross-functional teams
 \end{itemize}
 
-%% Beliveau Lab Rotation
-{\bf University of Washington Department of Genome Sciences} \hfill { \em Seattle,WA}\\
-{Lab Rotation with Brian Beliveau} \hfill {\em March 2020 - June 2020}
-\begin{itemize}
-    \item Implemented a bioinformatics pipeline for the design of split-oligo probes for fluorescence \emph{in situ} hybridization (FISH) experiments to enable fast and affordable design of highly-specific RNA FISH probes.
-\end{itemize}
-
-%% Matsen Group Rotation
-{\bf Fred Hutchison Cancer Research Center} \hfill { \em Seattle,WA}\\
-{Lab Rotation with Frederick Matsen IV} \hfill {\em Jan. 2020 - March 2020}
-\begin{itemize}
-    \item \emph{See related entry above}
-\end{itemize}
-
-%% Noble Lab Rotation
-{\bf University of Washington Department of Genome Sciences} \hfill { \em Seattle,WA}\\
-{Lab Rotation with William S. Noble} \hfill {\em Sept. 2019 - Dec. 2019}
-\begin{itemize}
-    \item Implemented a novel method for systematically finding potential functional inter-chromosomal contacts in Hi-C data.
-\end{itemize}
-
-%% Undergrad research w/ Dr. Tegge
-{\bf Virginia Tech Department of Statistics} \hfill { \em Blacksburg,VA}\\
-{Undergraduate Research with Allison Tegge} \hfill {\em Aug. 2018 - May 2019}
-\begin{itemize}
-    \item Implemented Self-Organizing Maps and conducted survival analysis to identify genes and pathways associated with progression of colorectal cancer from patients included in The Cancer Genome Atlas Program.
-\end{itemize}
+% % SAIG consultant
+% {\bf Virginia Tech Statistical Applications and Innovations Group} \hfill {\em Blacksburg, VA} \\
+% {Associate Collaborator} \hfill {\em June 2019 - Sept. 2019}
+% \begin{itemize}
+%     \item Assistant statistics consultant to Virginia Tech graduate students and faculty.
+% \end{itemize}
 
 %% Undergrad research w/ Dr. Johnson
 {\bf Virginia Tech Department of Statistics} \hfill { \em Blacksburg,VA}\\
 {Undergraduate Research with Leah Johnson} \hfill {\em Aug. 2017 - May 2019}
 \begin{itemize}
-    \item Developed a new formula for the disease basic reproductive number, $R_0,$ to include temperature sensitive midge life history traits to predict potential regions for the spread of Bluetongue viral disease.
+    \item Developed predictive environmental models integrating temperature-dependent biological parameters with disease transmission dynamics to forecast Bluetongue virus spread across different climate scenarios
+    \item Built Bayesian hierarchical models using MCMC methods to quantify uncertainty in environmental-disease relationships, incorporating temperature-sensitive vector life history traits and host-pathogen interactions
 \end{itemize}
 
+% %% Nielsen Internship
+% {\bf Nielsen} \hfill {\em Chicago, IL} \\
+% {Data Science Intern} \hfill {\em June 2018 - Aug. 2018}
+% \begin{itemize}
+%     \item Implemented statistical framework to identify possible errors in scanned receipt data and implemented pipeline to attempt to correct errors
+% \end{itemize}
 
 %% UW REU w/ Dr. Bruce
 {\bf University of Washington Department of Genome Sciences} \hfill { \em Seattle,WA}\\
@@ -121,6 +130,8 @@ Minors in Mathematics and Computer Science
 
 \begin{itemize}
 
+    \item \textbf{Thornton, Z.}, Haddox, H.K., Tran, T, Bedford, T, Matsen IV, F.A. (2025). Simulating the genetic and antigenic evolution of viruses under selection pressure from host immunity   \emph{Manuscript in preparation}
+
     \item Yu, T., \textbf{Thornton, Z.}, Hannon, W., DeWitt, W.S., Radford, C., Matsen IV, F.A. and Bloom, J.D. (2022). A biophyscial model of viral escape from polyclonal antibodies \emph{Virus Evolution}, 8(2), veac110.
 
     \item El Moustaid, F., \textbf{Thornton, Z.}, Slamani, H., Ryan, S. and Johnson, LR (2021). Predicting temperature-dependent transmission suitability of bluetongue virus in livestock. \emph{Parasites Vectors}, 14(1), pp.1-14..
@@ -129,7 +140,6 @@ Minors in Mathematics and Computer Science
 \end{itemize}
 
 \end{rSection}
-
 %----------------------------------------------------------------------------------------
 %	RESEARCH PRESENTATIONS SECTION
 %----------------------------------------------------------------------------------------
@@ -149,115 +159,59 @@ Minors in Mathematics and Computer Science
 \end{rSection}
 
 
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
+% %----------------------------------------------------------------------------------------
+% %	HONORS SECTION
+% %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Work Experience}
+% \begin{rSection}{Honors}
+% {\bf National Science Foundation Graduate Research Fellowship Program} \hfill { \em Awarded 2020}
+% \begin{itemize}
+%     \item Honorable mention
+% \end{itemize}
 
-{\bf Adaptive Biotechnologies} \hfill {\em Seattle, WA} \\
-{Machine Learning Computational Biology Intern} \hfill {\em June 2022 - Sept. 2022}
-\begin{itemize}
-    \item Conducted benchmarking of semi-supervised learning methods for predicting T-cell receptor specificity from high-throughput sequencing data.
-\end{itemize}
+% {\bf Mu Sigma Rho, National Honor Society} \hfill { \em Inducted April 2019}
+% \begin{itemize}
+%     \item National honorary society for statistics whose purpose is the promotion and encouragement of scholarly activity in statistics, and the recognition of outstanding achievement among the students and instructional staff in eligible academic institutions.
+% \end{itemize}
 
-{\bf Virginia Tech Statistical Applications and Innovations Group} \hfill {\em Blacksburg, VA} \\
-{Associate Collaborator} \hfill {\em June 2019 - Sept. 2019}
-\begin{itemize}
-    \item Assistant statistics consultant to Virginia Tech graduate students and faculty.
-\end{itemize}
+% {\bf College of Science Dean’s Roundtable Scholarship, Virginia Tech} \hfill { \em Aug. 2018 - May 2019}
+% \begin{itemize}
+%     \item Merit-based scholarship awarded annually to four students who are and will continue to be excellent representatives of the College of Science
+% \end{itemize}
 
-{\bf Virginia Tech Department of Statistics} \hfill {\em Blacksburg, VA} \\
-{Course Development Contributor for Dr. Christian Lucero} \hfill {\em May. 2019 - June 2019}
-\begin{itemize}
-    \item Assisted in writing of lectures, and homework assignments for an introductory machine learning class: Introduction to Data Analysis and Visualization (CMDA 3654)
-\end{itemize}
+% {\bf Luther and Alice Hamlett Undergraduate Research Grant} \hfill { \em Aug. 2018 - May 2019}
+% \begin{itemize}
+%     \item Selective research grant awarded to Virginia Tech undergraduates conducting research in the Academy of Integrated Sciences
+% \end{itemize}
 
-{\bf Virginia Tech Department of Statistics} \hfill {\em Blacksburg, VA} \\
-{Grader for Dr. Jane Robertson Evia} \hfill {\em Aug. 2018 - May 2019}
-\begin{itemize}
-    \item Statistics for Social Science (STAT 3604)
-\end{itemize}
+% {\bf Fralin Undergraduate Research Fellowship} \hfill { \em Aug. 2017 - May 2018}
+% \begin{itemize}
+%     \item Selective fellowship awarded to Virginia Tech undergraduates conducting research involving the life sciences
+% \end{itemize}
 
-{\bf Nielsen} \hfill {\em Chicago, IL} \\
-{Data Science Intern} \hfill {\em June 2018 - Aug. 2018}
-\begin{itemize}
-    \item Implemented statistical framework to identify possible errors in scanned receipt data and implemented pipeline to attempt to correct errors
-    \end{itemize}
+% {\bf Eckert Statistics Scholar, Virginia Tech} \hfill { \em Jan. 2016 - May 2019}
+% \begin{itemize}
+%     \item Three-year scholarship awarded annually to two Statistics majors for academic excellence
+% \end{itemize}
 
-{\bf Virginia Tech Math Emporium} \hfill {\em Blacksburg, VA} \\
-{Instructional Assistant} \hfill {\em Jan. 2017 - Aug. 2018}
-\begin{itemize}
-    \item Teaching assistant for introductory math courses including differential and integral calculus, graph theory, differential equations, and linear algebra
-\end{itemize}
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	HONORS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Honors}
-{\bf National Science Foundation Graduate Research Fellowship Program} \hfill { \em Awarded 2020}
-\begin{itemize}
-    \item Honorable mention
-\end{itemize}
-
-{\bf Mu Sigma Rho, National Honor Society} \hfill { \em Inducted April 2019}
-\begin{itemize}
-    \item National honorary society for statistics whose purpose is the promotion and encouragement of scholarly activity in statistics, and the recognition of outstanding achievement among the students and instructional staff in eligible academic institutions.
-\end{itemize}
-
-{\bf College of Science Dean’s Roundtable Scholarship, Virginia Tech} \hfill { \em Aug. 2018 - May 2019}
-\begin{itemize}
-    \item Merit-based scholarship awarded annually to four students who are and will continue to be excellent representatives of the College of Science
-\end{itemize}
-
-{\bf Luther and Alice Hamlett Undergraduate Research Grant} \hfill { \em Aug. 2018 - May 2019}
-\begin{itemize}
-    \item Selective research grant awarded to Virginia Tech undergraduates conducting research in the Academy of Integrated Sciences
-\end{itemize}
-
-{\bf Fralin Undergraduate Research Fellowship} \hfill { \em Aug. 2017 - May 2018}
-\begin{itemize}
-    \item Selective fellowship awarded to Virginia Tech undergraduates conducting research involving the life sciences
-\end{itemize}
-
-{\bf Eckert Statistics Scholar, Virginia Tech} \hfill { \em Jan. 2016 - May 2019}
-\begin{itemize}
-    \item Three-year scholarship awarded annually to two Statistics majors for academic excellence
-\end{itemize}
-
-\end{rSection}
+% \end{rSection}
 
 
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
 
-\begin{rSection}{Programming Languages, Tools, and Concepts}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Preferred Programming Languages \ & Python, R, C/C++ \\
-HPC Tools \ & CUDA, MPI, openMP, SLURM \\
-Dev Tools \& Environments  & Git, VSCode, Jupyter \\
-Other Programming Languages \ &  Java, MATLAB, SQL
-\end{tabular}
-
-\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	PROFESSIONAL ORGANIZATIONS SECTION
 %----------------------------------------------------------------------------------------
-\begin{rSection}{Professional Organizations}
+% \begin{rSection}{Professional Organizations}
 
-\begin{itemize}
-    \item The American Association of Immunologists member since 2020
-    \item National Society of Blacks in Computing member since 2017
-    \item American Statistical Association member since 2016
-    \item National Society of Black Engineers member since 2016
-\end{itemize}
+% \begin{itemize}
+%     \item The American Association of Immunologists member since 2020
+%     \item National Society of Blacks in Computing member since 2017
+%     \item American Statistical Association member since 2016
+%     \item National Society of Black Engineers member since 2016
+% \end{itemize}
 
-\end{rSection}
+% \end{rSection}
 
 
 \end{document}
