@@ -18,3 +18,4 @@ _ignore
 *.bbl
 *.blg
 *.log
+*.out
