@@ -32,13 +32,26 @@
 \begin{document}
 
 %----------------------------------------------------------------------------------------
+%	RESEARCH INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Research Interests}
+
+I develop machine learning models for problems in molecular biology and immunology.
+My interests span the adaptive immune system and viral antigenic evolution, centered on the antibodies and antigens that mediate their interaction.
+I am particularly focused on applying protein language models and computational protein design methods to understand and engineer these molecules.
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
 
 {\bf University of Washington - Seattle, WA} \hfill {\em Sep. 2019 - March 2026}
-\\ Ph.D in Genome Sciences \smallskip \\
+\\ Ph.D in Genome Sciences
+\\ Dissertation: {\em Computational tools for studying viral antigenic evolution} \smallskip \\
 {\bf Virginia Tech - Blacksburg, VA} \hfill {\em Aug. 2015 - May 2019}
 \\ B.Sc Statistics  \smallskip
 \\{\bf Virginia Tech - Blacksburg, VA} \hfill {\em Aug. 2015 - May 2019}
@@ -53,19 +66,11 @@ Minors in Mathematics and Computer Science
 
 \begin{rSection}{Technical Skills}
 
-    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} p{0.5\textwidth} @{} }
-        \multicolumn{2}{l}{\textit{Methodological Expertise}} \\
-        Machine Learning & Supervised/unsupervised methods, deep learning, Bayesian inference, probabilistic programming, anomaly detection, model benchmarking \\
-        Statistical Methods & MCMC, variational inference, hierarchical modeling, regularization and dimensionality reduction techniques \\
-        Computational Biology & Phylogenetic inference, sequence analysis, antigenic evolution modeling, epidemiological simulation \\
-        High-Performance Computing & Parallel computing, distributed workflows, performance optimization \\
-        \\
-        \multicolumn{2}{l}{\textit{Tools \& Frameworks}} \\
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{3ex}} p{0.68\textwidth} @{} }
         Languages & Python, R, Java, SQL, MATLAB, bash \\
-        ML/DL & PyTorch, TensorFlow, JAX, NumPyro, scikit-learn \\
-        Bioinformatics & Augur, Auspice, Biopython, evofr \\
-        Data Science Stack & pandas, numpy, scipy, matplotlib, seaborn \\
-        Infrastructure & SLURM, CUDA, openMP, Unix/Linux, git, Claude code
+        ML \& Statistics & PyTorch, TensorFlow, JAX, NumPyro, scikit-learn; supervised and unsupervised learning, deep learning, Bayesian inference, probabilistic programming, MCMC, variational inference, hierarchical modeling, dimensionality reduction, model benchmarking \\
+        Computational Biology & Phylogenetic inference, sequence analysis, deep mutational scanning analysis, antigenic evolution modeling; Augur, Auspice, Biopython, evofr \\
+        Scientific Computing & pandas, numpy, scipy, matplotlib, seaborn; SLURM, CUDA, openMP, AWS, Redshift, Unix/Linux, git, high-performance computing
     \end{tabular}
 
 \end{rSection}
@@ -76,13 +81,11 @@ Minors in Mathematics and Computer Science
 
 \begin{rSection}{Research and Work Experience}
 
-%% Genentech internship (in progress -- started June 2026).
+%% Genentech internship (June 2026 -- September 2026).
 {\bf Genentech} \hfill {\em South San Francisco, CA}\\
-{Data Science Intern, Evidence for Access (Technical Institute)} \hfill {\em June 2026 - Present}
+{Data Science Intern, Evidence for Access (Technical Institute)} \hfill {\em June 2026 - September 2026}
 \begin{itemize}
-    \item Developing a claims cost imputation model over 100M+ IQVIA records to support Health Economics Outcomes Research (HEOR) and Real-World Data (RWD) analyses
-    \item Fitting gradient-boosted models (CatBoost) that correct the systematic underestimation bias present in vendor-supplied IQVIA cost imputations
-    \item Preparing to deploy the model to team infrastructure so improved cost estimates are available for downstream analyses
+    \item Implemented and deployed a machine learning model (CatBoost) for imputation of proxied costs on 100M+ claims records, supporting Health Economics Outcomes Research (HEOR) and Real-World Data (RWD) analyses
 \end{itemize}
 
 %% Matsen Group candidate
@@ -98,10 +101,8 @@ Minors in Mathematics and Computer Science
 {\bf Adaptive Biotechnologies} \hfill {\em Seattle, WA} \\
 {Machine Learning Computational Biology Intern} \hfill {\em June 2022 - Sept. 2022}
 \begin{itemize}
-    \item Implemented and benchmarked semi-supervised learning methods for classification of T-cell receptor specificity using high-throughput sequencing data
-    \item Designed data preprocessing pipelines to handle complex biological sequence data at scale
-    \item Conducted systematic downsampling experiments to optimize model performance across varying data conditions
-    \item Developed visualization tools to communicate technical findings to cross-functional teams
+    \item Implemented and benchmarked semi-supervised learning methods for classification of T-cell receptor specificity from high-throughput sequencing data, characterizing model performance across data conditions through systematic downsampling experiments
+    \item Built data preprocessing pipelines for large, complex biological sequence datasets and visualization tools to communicate findings to experimental and computational collaborators
 \end{itemize}
 
 % % SAIG consultant
@@ -129,7 +130,8 @@ Minors in Mathematics and Computer Science
 {\bf University of Washington Department of Genome Sciences} \hfill { \em Seattle, WA}\\
 {Undergraduate Researcher, advised by Jim Bruce} \hfill {\em June 2017 - Aug. 2017}
 \begin{itemize}
-    \item Visualized inter-surface regions of cross-linked proteins and built probabilistic models to quantify competition between proteins for linkage with other proteins to help scientists characterize protein function, discover mutations, and discover protein-protein interactions to tackle molecular challenges such as cancer
+    \item Built probabilistic models to quantify competition between proteins for cross-linking, informing characterization of protein function and protein-protein interactions
+    \item Developed 3D visualization tools for inter-surface regions of cross-linked proteins, contributing to published proteomics software
 \end{itemize}
 
 \end{rSection}
@@ -141,7 +143,7 @@ Minors in Mathematics and Computer Science
 
 \begin{itemize}
 
-    \item \textbf{Thornton, Z.}, Tran, T., Figgins, M., Huddleston, J., Bedford, T., Matsen IV, F.A., Haddox, H. (2026). Simulating the genetic and antigenic evolution of viruses under selection pressure from host immunity.   \emph{Manuscript submitted to Virus Evolution}.
+    \item \textbf{Thornton, Z.}, Tran, T., Figgins, M., Huddleston, J., Bedford, T., Matsen IV, F.A., Haddox, H. (2026). Simulating the genetic and antigenic evolution of viruses under selection pressure from host immunity.   \emph{Manuscript under revision at Virus Evolution}.
 
     \item Yu, T.*, \textbf{Thornton, Z.*}, Hannon, W., DeWitt, W.S., Radford, C., Matsen IV, F.A. and Bloom, J.D. (2022). A biophyscial model of viral escape from polyclonal antibodies. \emph{Virus Evolution}, 8(2), veac110.
 
@@ -171,42 +173,37 @@ Minors in Mathematics and Computer Science
 \end{rSection}
 
 
-% %----------------------------------------------------------------------------------------
-% %	HONORS SECTION
-% %----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	TEACHING AND MENTORING SECTION
+%----------------------------------------------------------------------------------------
 
-% \begin{rSection}{Honors}
-% {\bf National Science Foundation Graduate Research Fellowship Program} \hfill { \em Awarded 2020}
-% \begin{itemize}
-%     \item Honorable mention
-% \end{itemize}
+\begin{rSection}{Teaching and Mentoring}
 
-% {\bf Mu Sigma Rho, National Honor Society} \hfill { \em Inducted April 2019}
-% \begin{itemize}
-%     \item National honorary society for statistics whose purpose is the promotion and encouragement of scholarly activity in statistics, and the recognition of outstanding achievement among the students and instructional staff in eligible academic institutions.
-% \end{itemize}
+{\bf Graduate Teaching Assistant}, University of Washington \hfill {\em 2022 - 2023}
+\begin{itemize}
+    \item Genome 361: Fundamentals of Genetics and Genomics (Spring 2022)
+    \item Genome 475: Debates in Genetics (Spring 2023)
+\end{itemize}
 
-% {\bf College of Science Dean’s Roundtable Scholarship, Virginia Tech} \hfill { \em Aug. 2018 - May 2019}
-% \begin{itemize}
-%     \item Merit-based scholarship awarded annually to four students who are and will continue to be excellent representatives of the College of Science
-% \end{itemize}
+{\bf Research Mentor}, University of Washington \hfill {\em 2022 - 2024}
+\begin{itemize}
+    \item Mentored Thien Tran (B.S., Paul G. Allen School of Computer Science), now a software engineer at Amazon
+\end{itemize}
 
-% {\bf Luther and Alice Hamlett Undergraduate Research Grant} \hfill { \em Aug. 2018 - May 2019}
-% \begin{itemize}
-%     \item Selective research grant awarded to Virginia Tech undergraduates conducting research in the Academy of Integrated Sciences
-% \end{itemize}
+\end{rSection}
 
-% {\bf Fralin Undergraduate Research Fellowship} \hfill { \em Aug. 2017 - May 2018}
-% \begin{itemize}
-%     \item Selective fellowship awarded to Virginia Tech undergraduates conducting research involving the life sciences
-% \end{itemize}
+%----------------------------------------------------------------------------------------
+%	HONORS SECTION
+%----------------------------------------------------------------------------------------
 
-% {\bf Eckert Statistics Scholar, Virginia Tech} \hfill { \em Jan. 2016 - May 2019}
-% \begin{itemize}
-%     \item Three-year scholarship awarded annually to two Statistics majors for academic excellence
-% \end{itemize}
-
-% \end{rSection}
+\begin{rSection}{Honors and Awards}
+{\bf National Science Foundation Graduate Research Fellowship Program}, Honorable Mention \hfill {\em 2020} \\
+{\bf Mu Sigma Rho}, National Honor Society for Statistics \hfill {\em 2019} \\
+{\bf College of Science Dean's Roundtable Scholarship}, Virginia Tech \hfill {\em 2018--2019} \\
+{\bf Luther and Alice Hamlett Undergraduate Research Grant}, Virginia Tech \hfill {\em 2018--2019} \\
+{\bf Fralin Undergraduate Research Fellowship}, Virginia Tech \hfill {\em 2017--2018} \\
+{\bf Eckert Statistics Scholar}, Virginia Tech \hfill {\em 2016--2019}
+\end{rSection}
 
 
 

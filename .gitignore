@@ -19,3 +19,5 @@ _ignore
 *.blg
 *.log
 *.out
+# Tailored, per-job CV spin-offs (never tracked)
+applications/

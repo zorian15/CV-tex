@@ -116,16 +116,31 @@
 \section{Professional Summary}
 \small{Computational biologist and machine learning researcher with 6+ years of experience developing predictive models for biological systems. Expertise in building end-to-end deep learning pipelines for large-scale sequence analysis, implementing Bayesian statistical methods, and translating complex biological data into actionable insights. Proven track record of developing production-grade tools for viral evolution modeling and protein phenotype prediction.}
 
+%-----------SELECTED PROJECTS-----------
+\section{Selected Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Protein Language Model Portfolio} $|$ \href{https://github.com/zorian15/bio-transformer-portfolio}{\underline{github.com/zorian15/bio-transformer-portfolio}}}{2026}
+      \resumeItemListStart
+        \resumeItem{Benchmarked ESM-2 zero-shot scoring, linear probes, and LoRA fine-tuning against structured baselines on ProteinGym deep mutational scanning assays, reproducing published ProteinGym results to validate the pipeline}
+        \resumeItem{Established that zero-shot masked-marginal scoring is additive by construction and therefore cannot represent epistasis, motivating supervised comparison against interpretable biophysical models on multi-mutant SARS-CoV-2 RBD data}
+        \resumeItem{Measured the effect of concatenating functional-annotation text embeddings onto ESM-2 representations for subcellular localization prediction, raising macro-F1 from 0.616 to 0.740 across 2,773 homology-partitioned held-out proteins; shuffled-text and structured-field controls bound how much of that gain could be label leakage rather than functional signal}
+        \resumeItem{Built a shared, typed, tested Python package (pytest, mypy, ruff, GitHub Actions CI including an embedding-drift anchor), a published documentation site, and SLURM/CUDA job templates}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Python, R, SQL, Java, MATLAB, bash} \\
-     \textbf{Machine Learning}{: PyTorch, TensorFlow, JAX, NumPyro, scikit-learn, supervised/unsupervised learning, deep learning, Bayesian inference} \\
+     \textbf{Machine Learning}{: PyTorch, TensorFlow, JAX, NumPyro, scikit-learn, supervised/unsupervised learning, deep learning, transfer learning, Bayesian inference} \\
+     \textbf{Protein ML}{: Protein language models (ESM-2), LoRA / parameter-efficient fine-tuning, Hugging Face, embedding-based property prediction, deep mutational scanning analysis} \\
+     \textbf{Protein Design \& Structure}{: Rosetta, RoseTTAFold (graduate coursework with D. Baker and F. DiMaio); protein--protein interaction and interface analysis} \\
      \textbf{Statistical Methods}{: MCMC, variational inference, hierarchical modeling, dimensionality reduction, model benchmarking} \\
-     \textbf{Bioinformatics \& Computational Biology}{: Phylogenetic inference, sequence analysis, deep mutational scanning, Augur, Auspice, Biopython, evofr} \\
+     \textbf{Bioinformatics \& Computational Biology}{: Phylogenetic inference, sequence analysis, antigenic evolution modeling, Augur, Auspice, Biopython, evofr} \\
      \textbf{Data Science \& Visualization}{: pandas, numpy, scipy, matplotlib, seaborn, statistical modeling} \\
-     \textbf{Infrastructure \& Tools}{: Git, SLURM, CUDA, parallel computing, Unix/Linux, high-performance computing}
+     \textbf{Software Engineering}{: Git, pytest, mypy, ruff, GitHub Actions CI, code review, SLURM, CUDA, parallel computing, AWS, Redshift, Unix/Linux, high-performance computing}
     }}
  \end{itemize}
 
@@ -133,23 +148,21 @@
 \section{Research \& Work Experience}
   \resumeSubHeadingListStart
 
-    %% Genentech internship (in progress -- started June 2026).
+    %% Genentech internship (June 2026 -- September 2026).
     \resumeSubheading
       {Genentech}{South San Francisco, CA}
-      {Data Science Intern, Evidence for Access (Technical Institute)}{June 2026 -- Present}
+      {Data Science Intern, Evidence for Access (Technical Institute)}{June 2026 -- September 2026}
       \resumeItemListStart
-        \resumeItem{Developed a claims cost imputation model on 100M+ IQVIA insurance records to improve accuracy of cost estimates used in Health Economics Outcomes Research (HEOR) and Real-World Data (RWD) analyses}
-        \resumeItem{Trained CatBoost gradient-boosting models that resolve the extreme underestimation bias in vendor-supplied IQVIA cost imputations}
-        \resumeItem{Deploying the model to team infrastructure to make improved cost imputations accessible across future HEOR and RWD analyses}
+        \resumeItem{Implemented and deployed a machine learning model (CatBoost) for imputation of proxied costs on 100M+ claims records, supporting Health Economics Outcomes Research (HEOR) and Real-World Data (RWD) analyses}
       \resumeItemListEnd
 
     \resumeSubheading
       {Fred Hutchinson Cancer Research Center}{Seattle, WA}
       {Doctoral Researcher, Computational Biology (Advisor: Frederick Matsen IV)}{July 2021 -- June 2026}
       \resumeItemListStart
-        \resumeItem{Built end-to-end PyTorch pipelines for viral fitness prediction from deep mutational scanning data, processing datasets of tens of thousands of protein variants with genotype-phenotype mapping models}
-        \resumeItem{Developed biophysically-inspired neural network architectures that predict variant effects from experimental measurements, enabling accurate phenotype predictions across multiple viral protein phenotypes}
-        \resumeItem{Created open-source Java simulation framework for modeling viral evolution under immune selection, integrating phylogenetic inference with phenotypic fitness landscapes}
+        \resumeItem{Built \texttt{torchdms}, a PyTorch package of interpretable neural networks predicting mutational effects on binding, expression, and stability from deep mutational scanning data across tens of thousands of protein variants}
+        \resumeItem{Co-developed \texttt{polyclonal}, a biophysical model of viral escape from polyclonal antibody serum that decomposes escape into epitope-specific contributions and per-mutation effects; used in subsequent Bloom lab escape experiments}
+        \resumeItem{Created \texttt{antigen-prime}, an open-source Java simulator of joint sequence and antigenic evolution of viral populations under host immune selection, used to benchmark variant-assignment and fitness-estimation methods}
         \resumeItem{Collaborated with experimental biology teams to validate computational predictions, resulting in 2 peer-reviewed publications and tools adopted by multiple research groups}
       \resumeItemListEnd
       
@@ -157,10 +170,8 @@
       {Adaptive Biotechnologies}{Seattle, WA}
       {Machine Learning Computational Biology Intern}{June 2022 -- Sept. 2022}
       \resumeItemListStart
-        \resumeItem{Implemented and benchmarked semi-supervised learning methods for T-cell receptor specificity classification using high-throughput sequencing datasets containing millions of sequences}
-        \resumeItem{Designed scalable data preprocessing pipelines in Python to handle complex biological sequence data, optimizing memory usage and runtime for production deployment}
-        \resumeItem{Conducted systematic downsampling experiments to characterize model performance across varying data conditions, identifying optimal training set sizes for different classification tasks}
-        \resumeItem{Developed visualization dashboards to communicate technical findings to cross-functional teams including immunologists, clinicians, and product managers}
+        \resumeItem{Implemented and benchmarked semi-supervised learning methods for T-cell receptor specificity classification on high-throughput sequencing datasets of millions of sequences, using systematic downsampling experiments to identify optimal training set sizes across classification tasks}
+        \resumeItem{Designed scalable Python preprocessing pipelines optimized for memory and runtime, and visualization dashboards to communicate findings to cross-functional teams of immunologists, clinicians, and product managers}
     \resumeItemListEnd
 
     \resumeSubheading
@@ -196,6 +207,9 @@
     \resumeSubheading
       {University of Washington}{Seattle, WA}
       {Ph.D. in Genome Sciences}{Sep. 2019 -- March 2026}
+      \resumeItemListStart
+        \resumeItem{Dissertation: \textit{Computational tools for studying viral antigenic evolution}}
+      \resumeItemListEnd
     \resumeSubheading
       {Virginia Tech}{Blacksburg, VA}
       {B.Sc. Statistics \& B.Sc. Computational Modeling and Data Analytics}{Aug. 2015 -- May 2019}
@@ -208,7 +222,7 @@
 \section{Selected Publications}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-    \textbf{Thornton, Z.}, Tran, T., Figgins, M., et al. (2026). Simulating the genetic and antigenic evolution of viruses under selection pressure from host immunity. \textit{Manuscript submitted to Virus Evolution.} \\
+    \textbf{Thornton, Z.}, Tran, T., Figgins, M., et al. (2026). Simulating the genetic and antigenic evolution of viruses under selection pressure from host immunity. \textit{Manuscript under revision in Virus Evolution.} \\
     Yu, T.*, \textbf{Thornton, Z.*}, Hannon, W., et al. (2022). A biophysical model of viral escape from polyclonal antibodies. \textit{Virus Evolution}, 8(2), veac110. \\
     El Moustaid, F., \textbf{Thornton, Z.}, et al. (2021). Predicting temperature-dependent transmission suitability of bluetongue virus in livestock. \textit{Parasites \& Vectors}, 14(1), pp.1-14. \\
     Keller, A., Chavez, J.D., Eng, J.K., \textbf{Thornton, Z.} and Bruce, J.E. (2018). Tools for 3D Interactome Visualization. \textit{Journal of Proteome Research}, 18(2), pp.753-758.
